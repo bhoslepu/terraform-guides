@@ -14,6 +14,7 @@ mandatory_tags = ["Name", "ttl", "Owner"]
 
 # Get all AWS Resources with standard tags
 allAWSResourcesWithStandardTags = aws.find_resources_with_standard_tags()
+print("AWS Resources with standard tags:", allAWSResourcesWithStandardTags)
 
 # Filter to AWS resources with violations
 # Warnings will be printed for all violations since the last parameter is true
